@@ -1,0 +1,959 @@
+/*==================================================
+            RESPONSIVE - PART 1
+            Large Laptop & Tablet
+==================================================*/
+
+
+/*======================
+        1200px
+======================*/
+
+@media (max-width: 1200px) {
+
+    html {
+        font-size: 58%;
+    }
+
+    section {
+        padding: 10rem 6% 5rem;
+    }
+
+    .navbar-container {
+        padding: 0 6%;
+    }
+
+    .hero-container {
+        gap: 5rem;
+    }
+
+    .about-container {
+        gap: 5rem;
+    }
+
+    .hero-image img {
+        width: 420px;
+        height: 420px;
+    }
+
+    .about-image img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .features-grid,
+    .process-grid {
+        gap: 2rem;
+    }
+
+}
+
+
+/*======================
+        992px
+======================*/
+
+@media (max-width: 992px) {
+
+    html {
+        font-size: 56.25%;
+    }
+
+    section {
+        padding: 9rem 5% 4rem;
+    }
+
+    .navbar-container {
+        padding: 0 5%;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        padding-top: 12rem;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        text-align: center;
+
+        gap: 5rem;
+    }
+
+    .hero-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        max-width: 800px;
+    }
+
+    .hero-description {
+        max-width: 700px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+
+    /* About */
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        text-align: center;
+
+        gap: 4rem;
+    }
+
+    .about-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        max-width: 800px;
+    }
+
+
+    /* Services */
+
+    .services-grid {
+        max-width: 900px;
+    }
+
+
+    /* Features */
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-grid {
+        gap: 2rem;
+    }
+
+
+    /* Process */
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 5rem;
+    }
+
+    .contact-content {
+        max-width: 800px;
+
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+    .contact-details {
+        max-width: 800px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+
+        gap: 3rem;
+    }
+
+}
+
+
+/*==================================================
+            RESPONSIVE - PART 2
+            Tablet & Large Mobile
+==================================================*/
+
+
+/*======================
+        768px
+======================*/
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+
+    /* Section */
+
+    section {
+        padding: 8rem 5% 4rem;
+    }
+
+
+    /* Navigation */
+
+    .navbar-container {
+        min-height: 7rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1.4rem;
+    }
+
+    .nav-cta {
+        padding: 1rem 1.8rem;
+
+        font-size: 1.3rem;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        padding-top: 11rem;
+    }
+
+    .hero-container {
+        gap: 4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 5.4rem;
+    }
+
+    .hero-description {
+        font-size: 1.6rem;
+    }
+
+    .hero-image img {
+        width: 320px;
+        height: 320px;
+    }
+
+
+    /* Buttons */
+
+    .hero-actions {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* Section Heading */
+
+    .section-heading {
+        margin-bottom: 4rem;
+    }
+
+    .section-heading h2 {
+        font-size: 4rem;
+    }
+
+
+    /* About */
+
+    .about-container {
+        gap: 3rem;
+    }
+
+    .about-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 4.2rem;
+    }
+
+
+    /* Services */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+
+
+    /* Features */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+    }
+
+    .portfolio-item {
+        height: 320px;
+    }
+
+
+    /* Process */
+
+    .process-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+
+    /* Contact */
+
+    .contact-content h2 {
+        font-size: 4.2rem;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 3.5rem;
+    }
+
+    .footer-brand {
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        align-items: center;
+    }
+
+}
+
+
+/*==================================================
+            RESPONSIVE - PART 3
+            Mobile Devices
+==================================================*/
+
+
+/*======================
+        576px
+======================*/
+
+@media (max-width: 576px) {
+
+    html {
+        font-size: 52.5%;
+    }
+
+
+    /* Section */
+
+    section {
+        padding: 7rem 5% 4rem;
+    }
+
+
+    /* Navigation */
+
+    .navbar-container {
+        min-height: 6.5rem;
+
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 2.6rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-cta {
+        padding: 0.9rem 1.6rem;
+
+        font-size: 1.2rem;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        padding-top: 10rem;
+    }
+
+    .hero-container {
+        gap: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 4.6rem;
+    }
+
+    .hero-label {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1.5rem;
+
+        line-height: 1.8;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    /* Hero Buttons */
+
+    .hero-actions {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 1.5rem;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+
+    /* Buttons */
+
+    .btn {
+        padding: 1.2rem 2.5rem;
+
+        font-size: 1.5rem;
+    }
+
+
+    /* Section Heading */
+
+    .section-label {
+        font-size: 1.2rem;
+    }
+
+    .section-heading h2 {
+        font-size: 3.6rem;
+    }
+
+    .section-heading > p:last-child {
+        font-size: 1.5rem;
+    }
+
+
+    /* About */
+
+    .about-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .about-content h2 {
+        font-size: 3.8rem;
+    }
+
+    .about-content p {
+        font-size: 1.5rem;
+    }
+
+
+    /* Services */
+
+    .service-card {
+        padding: 2rem;
+    }
+
+    .service-card h3 {
+        font-size: 2.1rem;
+    }
+
+    .service-card > p:not(.service-category) {
+        min-height: auto;
+
+        font-size: 1.4rem;
+    }
+
+
+    /* Features */
+
+    .feature-item {
+        padding: 2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .feature-item p {
+        font-size: 1.4rem;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-item {
+        height: 250px;
+
+        border-radius: 16px;
+    }
+
+    .portfolio-overlay {
+        padding: 2rem;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 2rem;
+    }
+
+
+    /* Process */
+
+    .process-step {
+        padding: 2rem;
+    }
+
+    .process-step h3 {
+        font-size: 1.8rem;
+    }
+
+    .process-step p {
+        font-size: 1.4rem;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        gap: 3rem;
+    }
+
+    .contact-content h2 {
+        font-size: 3.8rem;
+    }
+
+    .contact-content > p:not(.section-label) {
+        font-size: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 2rem;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        padding: 4rem 5% 0;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        gap: 1rem;
+    }
+
+}
+
+
+/*======================
+        480px
+======================*/
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 50%;
+    }
+
+
+    /* Navigation */
+
+    .navbar-container {
+        padding: 0 4%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .nav-cta {
+        padding: 0.8rem 1.4rem;
+
+        font-size: 1.1rem;
+    }
+
+
+    /* Hero */
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 240px;
+    }
+
+
+    /* About */
+
+    .about-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-content h2 {
+        font-size: 3.5rem;
+    }
+
+
+    /* Section Heading */
+
+    .section-heading h2 {
+        font-size: 3.4rem;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-item {
+        height: 220px;
+    }
+
+
+    /* Contact */
+
+    .contact-content h2 {
+        font-size: 3.5rem;
+    }
+
+
+    /* Footer */
+
+    .footer-bottom p {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/*==================================================
+            RESPONSIVE - PART 4
+            Small Mobile
+==================================================*/
+
+
+/*======================
+        400px
+======================*/
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 47.5%;
+    }
+
+
+    /* Section */
+
+    section {
+        padding: 7rem 4% 3rem;
+    }
+
+
+    /* Navigation */
+
+    .navbar-container {
+        min-height: 6rem;
+
+        padding: 0 4%;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .nav-cta {
+        padding: 0.7rem 1.2rem;
+
+        font-size: 1rem;
+    }
+
+
+    /* Hero */
+
+    .hero-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .hero-description {
+        font-size: 1.4rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    /* Buttons */
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+
+    /* Section Heading */
+
+    .section-heading h2 {
+        font-size: 3.2rem;
+    }
+
+
+    /* About */
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-content h2 {
+        font-size: 3.3rem;
+    }
+
+
+    /* Service */
+
+    .service-card {
+        padding: 1.8rem;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-item {
+        height: 200px;
+    }
+
+    .portfolio-overlay {
+        padding: 1.8rem;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* Process */
+
+    .process-step {
+        padding: 1.8rem;
+    }
+
+
+    /* Contact */
+
+    .contact-item {
+        padding: 1.8rem;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}
+
+
+/*======================
+        360px
+======================*/
+
+@media (max-width: 360px) {
+
+    html {
+        font-size: 45%;
+    }
+
+
+    /* Hero */
+
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-image img {
+        width: 190px;
+        height: 190px;
+    }
+
+
+    /* About */
+
+    .about-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    /* Section Heading */
+
+    .section-heading h2 {
+        font-size: 3rem;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-item {
+        height: 180px;
+    }
+
+
+    /* Footer */
+
+    .footer-bottom p {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/*==================================================
+            LANDSCAPE PHONES
+==================================================*/
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero-section {
+        min-height: auto;
+
+        padding-top: 11rem;
+        padding-bottom: 6rem;
+    }
+
+    .hero-container {
+        gap: 3rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+
+/*==================================================
+            LARGE DESKTOPS
+==================================================*/
+
+@media (min-width: 1600px) {
+
+    html {
+        font-size: 68.75%;
+    }
+
+
+    section {
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+
+
+    .hero-container {
+        gap: 12rem;
+    }
+
+
+    .hero-image img {
+        width: 550px;
+        height: 550px;
+    }
+
+
+    .about-image img {
+        width: 450px;
+        height: 450px;
+    }
+
+
+    .portfolio-item {
+        height: 400px;
+    }
+
+}
+
+
+/*==================================================
+            REDUCE ANIMATIONS
+==================================================*/
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation: none !important;
+
+        transition: none !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+}
+
+
+/*==================================================
+            END OF RESPONSIVE.CSS
+==================================================*/
