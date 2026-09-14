@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A simple and interactive temperature converter for Celsius, Fahrenheit, and Kelvin."
+    >
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Temperature Converter</h1>
+            <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin.</p>
+        </header>
+
+
+        <!-- Temperature Converter Card -->
+        <section class="converter-card" aria-label="Temperature Converter">
+
+            <!-- Input Section -->
+            <div class="input-section">
+
+                <label for="temperature">Temperature</label>
+
+                <div class="input-row">
+
+                    <input
+                        type="number"
+                        id="temperature"
+                        name="temperature"
+                        placeholder="Enter temperature"
+                        step="any"
+                        aria-describedby="input-error"
+                    >
+
+                    <select id="input-unit" name="input-unit" aria-label="Temperature unit">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+
+                </div>
+
+                <!-- Error Message -->
+                <p id="input-error" class="error-message" role="alert"></p>
+
+            </div>
+
+
+            <!-- Convert Button -->
+            <button type="button" id="convert-btn">
+                Convert
+            </button>
+
+
+            <!-- Result Section -->
+            <section class="result-section" aria-live="polite">
+
+                <h2>Conversion Result</h2>
+
+                <div class="results">
+
+                    <div class="result-item">
+                        <span class="result-label">Celsius</span>
+                        <span id="celsius-result">-- °C</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Fahrenheit</span>
+                        <span id="fahrenheit-result">-- °F</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Kelvin</span>
+                        <span id="kelvin-result">-- K</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
