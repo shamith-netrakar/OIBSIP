@@ -1,0 +1,925 @@
+/*==================================================
+            RESPONSIVE - PART 1
+            Large Laptop & Tablet
+==================================================*/
+
+/*======================
+        1200px
+======================*/
+
+@media (max-width:1200px){
+
+    html{
+
+        font-size:58%;
+
+    }
+
+    section{
+
+        padding:10rem 6% 5rem;
+
+    }
+
+    .header{
+
+        padding:2rem 6%;
+
+    }
+
+    .home{
+
+        gap:5rem;
+
+    }
+
+    .about-container{
+
+        gap:5rem;
+
+    }
+
+    .image-circle{
+
+        width:420px;
+        height:420px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:360px;
+        height:360px;
+
+    }
+
+}
+
+/*======================
+        992px
+======================*/
+
+@media (max-width:992px){
+
+    html{
+
+        font-size:56.25%;
+
+    }
+
+    .header{
+
+        padding:2rem 5%;
+
+    }
+
+    section{
+
+        padding:9rem 5% 4rem;
+
+    }
+
+    /* Home */
+
+    .home{
+
+        flex-direction:column-reverse;
+
+        justify-content:center;
+
+        text-align:center;
+
+        gap:5rem;
+
+    }
+
+    .home-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .home-content p{
+
+        max-width:700px;
+
+    }
+
+    /* About */
+
+    .about{
+
+        padding-top:8rem;
+
+    }
+
+    .about-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:4rem;
+
+    }
+
+    .about-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .about-content .section-title{
+
+        text-align:center;
+
+    }
+
+    /* Skills */
+
+    .skills-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    /* Projects */
+
+    .project-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    /* Contact */
+
+    .contact form{
+
+        max-width:100%;
+
+    }
+
+}
+/*==================================================
+            RESPONSIVE - PART 2
+            Tablet & Large Mobile
+==================================================*/
+
+/*======================
+        768px
+======================*/
+
+@media (max-width:768px){
+
+    html{
+
+        font-size:55%;
+
+    }
+
+    /* Header */
+
+    .header{
+
+        padding:1.8rem 5%;
+
+    }
+
+    .menu-btn{
+
+        display:block;
+
+        z-index:1001;
+
+    }
+
+    /* Navigation */
+
+    .navbar{
+
+        position:absolute;
+
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:2.5rem;
+
+        padding:3rem 0;
+
+        background:rgba(10,10,10,.95);
+
+        backdrop-filter:blur(20px);
+        -webkit-backdrop-filter:blur(20px);
+
+        border-top:1px solid rgba(0,162,255,.15);
+
+        transform:translateY(-20px);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transition:.35s ease;
+
+    }
+
+    .navbar.active{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+        visibility:visible;
+
+    }
+
+    .navbar a{
+
+        font-size:2rem;
+
+    }
+
+    /* Home */
+
+    .home{
+
+        gap:4rem;
+
+        padding-top:12rem;
+
+    }
+
+    .home-content h1{
+
+        font-size:5.4rem;
+
+    }
+
+    .home-content h3{
+
+        font-size:3rem;
+
+    }
+
+    .home-content p{
+
+        font-size:1.6rem;
+
+    }
+
+    .image-circle{
+
+        width:320px;
+        height:320px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:300px;
+        height:300px;
+
+    }
+
+    /* Buttons */
+
+    .home-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    /* Social Icons */
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+    /* About */
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    /* Skills */
+
+    .skills-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Projects */
+
+    .project-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-buttons{
+
+        flex-direction:column;
+
+    }
+
+    /* Contact */
+
+    .contact .input-box{
+
+        flex-direction:column;
+
+    }
+
+    .contact form{
+
+        padding:3rem;
+
+    }
+
+    /* Footer */
+
+    .footer-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .footer-links{
+
+        gap:2rem;
+
+    }
+
+}
+/*==================================================
+            RESPONSIVE - PART 3
+            Mobile Devices
+==================================================*/
+
+/*======================
+        576px
+======================*/
+
+@media (max-width:576px){
+
+    html{
+
+        font-size:52.5%;
+
+    }
+
+    section{
+
+        padding:8rem 5% 4rem;
+
+    }
+
+    /* Home */
+
+    .home{
+
+        gap:3rem;
+
+    }
+
+    .home-content h1{
+
+        font-size:4.6rem;
+
+    }
+
+    .home-content h3{
+
+        font-size:2.6rem;
+
+    }
+
+    .home-content p{
+
+        font-size:1.5rem;
+
+    }
+
+    .image-circle{
+
+        width:280px;
+        height:280px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:260px;
+        height:260px;
+
+    }
+
+    /* Buttons */
+
+    .home-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .home-buttons .btn{
+
+        width:100%;
+
+    }
+
+    /* About */
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Skills */
+
+    .skill-card{
+
+        padding:2rem;
+
+    }
+
+    .skill-header h3{
+
+        font-size:1.8rem;
+
+    }
+
+    /* Projects */
+
+    .project-card{
+
+        border-radius:16px;
+
+    }
+
+    .project-image{
+
+        height:200px;
+
+    }
+
+    .project-content{
+
+        padding:2rem;
+
+    }
+
+    .project-content h3{
+
+        font-size:2rem;
+
+    }
+
+    .project-buttons{
+
+        flex-direction:column;
+
+    }
+
+    /* Education */
+
+    .education-container{
+
+        padding-left:2rem;
+
+    }
+
+    .education-item{
+
+        padding-left:3rem;
+
+    }
+
+    .education-card{
+
+        padding:2rem;
+
+    }
+
+    /* Contact */
+
+    .contact form{
+
+        padding:2.5rem;
+
+    }
+
+    .contact textarea{
+
+        min-height:180px;
+
+    }
+
+    /* Footer */
+
+    .footer-links{
+
+        flex-direction:column;
+
+        gap:1.5rem;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+    /* Back To Top */
+
+    .back-to-top{
+
+        width:45px;
+        height:45px;
+
+        right:2rem;
+        bottom:2rem;
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/*======================
+        480px
+======================*/
+
+@media (max-width:480px){
+
+    html{
+
+        font-size:50%;
+
+    }
+
+    .header{
+
+        padding:1.6rem 4%;
+
+    }
+
+    .home-content h1{
+
+        font-size:4rem;
+
+    }
+
+    .home-content h3{
+
+        font-size:2.3rem;
+
+    }
+
+    .section-title h2{
+
+        font-size:3.8rem;
+
+    }
+
+    .image-circle{
+
+        width:240px;
+        height:240px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:220px;
+        height:220px;
+
+    }
+
+    .social-icons{
+
+        gap:1.2rem;
+
+    }
+
+    .social-icons a{
+
+        width:45px;
+        height:45px;
+
+        font-size:1.8rem;
+
+    }
+
+    .btn{
+
+        padding:1.2rem 2.5rem;
+
+        font-size:1.5rem;
+
+    }
+
+}
+/*==================================================
+            RESPONSIVE - PART 4
+            Small Mobile & Final Polish
+==================================================*/
+
+/*======================
+        400px
+======================*/
+
+@media (max-width:400px){
+
+    html{
+
+        font-size:47.5%;
+
+    }
+
+    section{
+
+        padding:7rem 4% 3rem;
+
+    }
+
+    .header{
+
+        padding:1.5rem 4%;
+
+    }
+
+    .logo{
+
+        font-size:2.6rem;
+
+    }
+
+    .navbar a{
+
+        font-size:1.8rem;
+
+    }
+
+    .home-content h1{
+
+        font-size:3.6rem;
+
+    }
+
+    .home-content h3{
+
+        font-size:2rem;
+
+    }
+
+    .home-content p{
+
+        font-size:1.4rem;
+
+    }
+
+    .image-circle{
+
+        width:220px;
+        height:220px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:200px;
+        height:200px;
+
+    }
+
+    .section-title h2{
+
+        font-size:3.3rem;
+
+    }
+
+    .social-icons{
+
+        gap:1rem;
+
+    }
+
+    .social-icons a{
+
+        width:42px;
+        height:42px;
+
+        font-size:1.7rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .project-image{
+
+        height:180px;
+
+    }
+
+    .project-content{
+
+        padding:1.8rem;
+
+    }
+
+    .education-card{
+
+        padding:1.8rem;
+
+    }
+
+    .contact form{
+
+        padding:2rem;
+
+    }
+
+}
+
+/*======================
+        360px
+======================*/
+
+@media (max-width:360px){
+
+    html{
+
+        font-size:45%;
+
+    }
+
+    .home-content h1{
+
+        font-size:3.2rem;
+
+    }
+
+    .home-content h3{
+
+        font-size:1.8rem;
+
+    }
+
+    .image-circle{
+
+        width:190px;
+        height:190px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:180px;
+        height:180px;
+
+    }
+
+    .social-icons a{
+
+        width:40px;
+        height:40px;
+
+        font-size:1.6rem;
+
+    }
+
+    .footer-links{
+
+        gap:1rem;
+
+    }
+
+}
+
+/*==================================================
+            LANDSCAPE PHONES
+==================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+    .home{
+
+        min-height:auto;
+
+        padding-top:12rem;
+
+        padding-bottom:6rem;
+
+    }
+
+    .image-circle{
+
+        width:220px;
+        height:220px;
+
+    }
+
+}
+
+/*==================================================
+            LARGE DESKTOPS
+==================================================*/
+
+@media (min-width:1600px){
+
+    html{
+
+        font-size:68.75%;
+
+    }
+
+    .home{
+
+        gap:12rem;
+
+    }
+
+    .image-circle{
+
+        width:550px;
+        height:550px;
+
+    }
+
+    .about-img .image-circle{
+
+        width:450px;
+        height:450px;
+
+    }
+
+}
+
+/*==================================================
+            REDUCE ANIMATIONS
+==================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/*==================================================
+            END OF RESPONSIVE.CSS
+==================================================*/
